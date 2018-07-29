@@ -78,7 +78,7 @@ public class RestExceptionHandler extends ResponseEntityExceptionHandler{
 			  HttpStatus status, WebRequest request) {
 			    String error = ex.getParameterName() + "parameter is missing";
 			     
-			    ApiError apiError = 
+			     apiError = 
 					      new ApiError(HttpStatus.BAD_REQUEST, ex.getLocalizedMessage(), error);  
 			  /*  
 			    
